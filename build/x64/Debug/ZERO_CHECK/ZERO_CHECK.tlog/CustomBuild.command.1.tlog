@@ -1,0 +1,10 @@
+^C:\USERS\ZAKIR\SOURCE\REPOS\LAB5\BUILD\CMAKEFILES\0931183913CFFAB7CD51C94EE06E9FDE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/zakir/source/repos/lab5 -BC:/Users/zakir/source/repos/lab5/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/zakir/source/repos/lab5/build/lab5.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
